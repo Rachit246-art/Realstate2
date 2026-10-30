@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Skyline Residences — VÉLORA Luxury Portfolio</title>
+  <meta name="description" content="Discover The Skyline Residences on Golf Course Extension Road, Gurgaon. Exclusive sky mansions by VÉLORA Real Estate.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar" id="navbar">
+    <div class="container-wide nav-container">
+      <a href="index.html" class="brand-logo" aria-label="VÉLORA Real Estate Homepage">
+        <span class="logo-title">VÉLORA</span>
+        <span class="logo-subtitle">REAL ESTATE</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="properties.html" class="active">Properties</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="communities.html">Communities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-schedule" id="openScheduleModal" aria-label="Schedule a Visit">
+          Schedule a Visit
+        </button>
+        <button class="btn-menu-icon" id="openMobileDrawer" aria-label="Open Navigation Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="8" x2="20" y2="8"></line>
+            <line x1="4" y1="16" x2="20" y2="16"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- DETAIL HERO SECTION -->
+  <section class="detail-hero-section">
+    <img src="assets/property-detail-hero.jpg" alt="The Skyline Residences Panoramic Sky Mansion" class="detail-hero-bg">
+    <div class="detail-hero-overlay"></div>
+
+    <div class="container detail-hero-content">
+      <div class="eyebrow eyebrow-light reveal">GURGAON GOLF COURSE EXTENSION</div>
+      <h1 class="hero-heading reveal delay-1" style="font-size: clamp(3rem, 5.5vw, 5.2rem); margin-bottom: 1rem;">
+        The Skyline Residences
+      </h1>
+      <p style="font-size: 1.2rem; color: rgba(248, 246, 240, 0.9); max-width: 620px; line-height: 1.6;" class="reveal delay-2">
+        A sculptural vertical sanctuary engineered with 12.5 ft floor-to-ceiling glass, private cantilevered infinity pools, and boundless horizon views.
+      </p>
+    </div>
+  </section>
+
+  <!-- FLOATING DOSSIER SPECS BAR -->
+  <div class="container">
+    <div class="detail-specs-bar reveal">
+      <div class="spec-cell">
+        <span class="spec-title">Location</span>
+        <span class="spec-val">Sector 66, Gurgaon</span>
+      </div>
+      <div class="spec-cell">
+        <span class="spec-title">Price Range</span>
+        <span class="spec-val">₹4.5 Cr — ₹11.2 Cr</span>
+      </div>
+      <div class="spec-cell">
+        <span class="spec-title">Configurations</span>
+        <span class="spec-val">3, 4 & 5 BHK Duplex</span>
+      </div>
+      <div class="spec-cell">
+        <span class="spec-title">Handover Status</span>
+        <span class="spec-val">Q4 2026 Ready</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARCHITECTURAL NARRATIVE SECTION -->
+  <section style="padding: 7rem 0 5rem; background-color: var(--bg-primary);">
+    <div class="container">
+      <div class="grid-split-row">
+        <div class="reveal">
+          <div class="eyebrow">ARCHITECTURAL MANIFESTO</div>
+          <h2 class="section-heading">Sculpted in Light, Air & Noble Stone</h2>
+          <p class="section-desc">
+            Designed in collaboration with European master architects, The Skyline Residences challenges conventional high-rise living. Every sky mansion features uninterrupted dual-aspect light, sound-insulated triple glazing, and Italian Calacatta marble finishes.
+          </p>
+          <div style="padding: 1.5rem 0; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); margin-top: 1.5rem;">
+            <p style="font-family: var(--font-heading); font-size: 1.3rem; font-style: italic; color: var(--text-primary); line-height: 1.4;">
+              “We envisioned not just a tower, but private suspended villas in the clouds where the horizon belongs entirely to you.”
+            </p>
+            <span style="font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent); margin-top: 0.5rem; display: block;">
+              — Stefan Richter, Design Principal
+            </span>
+          </div>
+        </div>
+
+        <div class="reveal delay-1" style="position: relative;">
+          <div style="height: 480px; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-elevated);">
+            <img src="assets/property-1.jpg" alt="The Skyline Residences Exterior View" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE FLOOR PLANS SECTION -->
+  <section class="floorplans-section">
+    <div class="container">
+      <div class="eyebrow">INTERACTIVE SCHEMATICS</div>
+      <h2 class="section-heading">Floor Plans & Spatial Geometry</h2>
+      <p class="section-desc">
+        Select a configuration below to explore architectural carpet dimensions, double-height ceiling volumes, and private deck layouts.
+      </p>
+
+      <!-- Configuration Tabs -->
+      <div class="plan-tabs reveal">
+        <button class="plan-tab-btn active" data-plan="3bhk">3 BHK Sky Residence</button>
+        <button class="plan-tab-btn" data-plan="4bhk">4 BHK Grand Duplex</button>
+        <button class="plan-tab-btn" data-plan="5bhk">5 BHK Presidential Penthouse</button>
+      </div>
+
+      <!-- Plan Display Grid -->
+      <div class="plan-display-grid reveal delay-1">
+        <div>
+          <h3 id="planTitle" style="font-family: var(--font-heading); font-size: 2.2rem; color: var(--text-primary); margin-bottom: 1rem;">
+            3 BHK Sky Residence
+          </h3>
+          <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 2rem;">
+            Carefully partitioned spatial planning with private passenger and service elevators opening directly into your dedicated private foyer.
+          </p>
+
+          <div class="plan-metrics-list">
+            <div class="metric-item">
+              <span class="metric-name">Carpet Area</span>
+              <div class="metric-number" id="planCarpet">3,600 sq.ft (334.4 sq.m)</div>
+            </div>
+            <div class="metric-item">
+              <span class="metric-name">Balcony Wrap</span>
+              <div class="metric-number" id="planBalcony">520 sq.ft Running Wrap Deck</div>
+            </div>
+            <div class="metric-item">
+              <span class="metric-name">Ceiling Clearance</span>
+              <div class="metric-number" id="planCeiling">12.5 ft Double Glazed</div>
+            </div>
+            <div class="metric-item">
+              <span class="metric-name">Basement Bays</span>
+              <div class="metric-number" id="planParking">2 Dedicated Basements + EV Bay</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2.5rem;">
+            <button class="btn-primary" id="openScheduleModal">
+              Request Full CAD Dossier
+            </button>
+          </div>
+        </div>
+
+        <!-- Architectural Schematic Illustration -->
+        <div class="plan-schematic-wrap">
+          <svg class="plan-schematic-svg" viewBox="0 0 400 300" fill="none" stroke="#B99A75" stroke-width="2">
+            <rect x="10" y="10" width="380" height="280" rx="8" stroke="#827C72" stroke-dasharray="4 4"/>
+            <path id="planSvgPath" d="M20,20 L380,20 L380,280 L20,280 Z M60,60 L200,60 L200,160 L60,160 Z M220,60 L340,60 L340,160 L220,160 Z M60,180 L340,180 L340,250 L60,250 Z" fill="rgba(185, 154, 117, 0.08)"/>
+            <text x="130" y="115" fill="#40372F" font-family="'DM Sans', sans-serif" font-size="12" text-anchor="middle">PRIMARY SALON</text>
+            <text x="280" y="115" fill="#40372F" font-family="'DM Sans', sans-serif" font-size="12" text-anchor="middle">MASTER SUITE</text>
+            <text x="200" y="220" fill="#40372F" font-family="'DM Sans', sans-serif" font-size="12" text-anchor="middle">PRIVATE SKY TERRACE & SPA</text>
+          </svg>
+          <div style="font-size: 0.78rem; color: var(--text-secondary); margin-top: 1rem; text-transform: uppercase; letter-spacing: 0.1em;">
+            Architectural Schematic — Not to Exact Construction Scale
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURATED INTERIOR GALLERY SECTION -->
+  <section style="padding: 6rem 0; background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="eyebrow">CURATED FINISHES & INTERIORS</div>
+      <h2 class="section-heading">Materials Crafted Without Compromise</h2>
+      <p class="section-desc">
+        Take a visual journey through the bespoke Italian kitchens, spa sanctuaries, and double-height entertaining lounges.
+      </p>
+
+      <div class="detail-gallery-grid reveal">
+        <!-- Master Suite (Tall) -->
+        <div class="gallery-cell gallery-cell-tall">
+          <img src="assets/interior-master.jpg" alt="Presidential Master Suite with Floor-to-Ceiling Glass">
+        </div>
+        <!-- Designer Kitchen -->
+        <div class="gallery-cell">
+          <img src="assets/interior-kitchen.jpg" alt="Custom Italian Boffi Designer Kitchen with Marble Island">
+        </div>
+        <!-- Architectural Living Salon -->
+        <div class="gallery-cell">
+          <img src="assets/experience.jpg" alt="Double-Height Penthouse Living Salon">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BESPOKE PRIVATE TOUR BOOKING BAR -->
+  <section style="padding: 6rem 0 8rem; background-color: var(--bg-primary);">
+    <div class="container">
+      <div style="background: var(--dark-espresso); color: var(--white); border-radius: var(--radius-xl); padding: 4.5rem; text-align: center; position: relative; overflow: hidden;" class="reveal">
+        <div class="eyebrow eyebrow-light" style="justify-content: center;">EXCLUSIVE SHOWCASE ACCESS</div>
+        <h2 style="font-family: var(--font-heading); font-size: clamp(2.2rem, 4vw, 3.4rem); color: #EDE7DC; margin-bottom: 1rem;">
+          Schedule an On-Site Private Viewing
+        </h2>
+        <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto 2.5rem; line-height: 1.7; font-size: 1.05rem;">
+          Private viewings are strictly limited to two parties per day to guarantee absolute exclusivity and dedicated architect accompaniment.
+        </p>
+        <button class="btn-primary" id="openScheduleModal" style="background: var(--accent);">
+          Reserve Private Appointment
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container-wide">
+      <div class="footer-top">
+        <h2 class="footer-tagline-heading">
+          A Higher Standard of Living, Defined for Tomorrow.
+        </h2>
+        <div class="footer-newsletter">
+          <span class="newsletter-label">Private Portfolio Newsletter</span>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Enter your private email..." required>
+            <button type="submit" class="newsletter-submit" aria-label="Subscribe">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-columns-grid">
+        <div class="footer-col footer-col-brand">
+          <div class="brand-logo">
+            <span class="logo-title">VÉLORA</span>
+            <span class="logo-subtitle">REAL ESTATE</span>
+          </div>
+          <p>
+            Curating India's most extraordinary residential landscapes and private luxury architectural estates with uncompromising elegance.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Residences</h4>
+          <ul class="footer-links">
+            <li><a href="properties.html">The Skyline Residences</a></li>
+            <li><a href="properties.html">Greenwood Estates</a></li>
+            <li><a href="properties.html">Lakeside Villas</a></li>
+            <li><a href="properties.html">Signature Penthouses</a></li>
+            <li><a href="properties.html">Private Enclaves</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Architecture</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Philosophy</a></li>
+            <li><a href="services.html">The Experience</a></li>
+            <li><a href="communities.html">Sustainable Design</a></li>
+            <li><a href="about.html">Heritage & Craft</a></li>
+            <li><a href="contact.html">Private Concierge</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Private Offices</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+911244008899">+91 124 400 8899</a></li>
+            <li><a href="mailto:concierge@velorarealestate.com">concierge@velorarealestate.com</a></li>
+            <li><a href="contact.html">Golf Course Road, Gurgaon</a></li>
+            <li><a href="contact.html">Lavelle Road, Bangalore</a></li>
+            <li><a href="contact.html">Worli Sea Face, Mumbai</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 VÉLORA Real Estate Group. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Protocol</a>
+          <a href="#">Terms of Exclusivity</a>
+          <a href="#">RERA Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL & DRAWER -->
+  <div class="modal-overlay" id="scheduleModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="closeScheduleModal" aria-label="Close Schedule Dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="eyebrow">PRIVATE APPOINTMENT</div>
+      <h3 class="section-heading" style="font-size: 2.2rem; margin-bottom: 0.5rem;">Schedule a Visit</h3>
+      <p class="section-desc" style="margin-bottom: 1.5rem;">
+        Experience the architectural brilliance of VÉLORA with a bespoke private walkthrough accompanied by our senior lifestyle advisor.
+      </p>
+
+      <form id="scheduleForm">
+        <div class="form-group">
+          <label for="schedName">Full Name</label>
+          <input type="text" id="schedName" class="form-control" placeholder="e.g. Alistair Vance" required>
+        </div>
+        <div class="form-group">
+          <label for="schedPhone">Phone Number</label>
+          <input type="tel" id="schedPhone" class="form-control" placeholder="+91 98765 43210" required>
+        </div>
+        <div class="form-group">
+          <label for="schedProp">Preferred Property</label>
+          <select id="schedProp" class="form-control">
+            <option value="skyline" selected>The Skyline Residences (Gurgaon)</option>
+            <option value="greenwood">Greenwood Estates (Noida)</option>
+            <option value="lakeside">Lakeside Villas (Bangalore)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="schedDate">Preferred Date</label>
+          <input type="date" id="schedDate" class="form-control" required>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
+          Confirm Private Viewing
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div>
+      <div style="display: flex; align-items: center; justify-content: space-between;">
+        <div class="brand-logo">
+          <span class="logo-title" style="color: var(--text-primary);">VÉLORA</span>
+          <span class="logo-subtitle" style="color: var(--accent);">REAL ESTATE</span>
+        </div>
+        <button class="modal-close-btn" id="closeMobileDrawer" aria-label="Close Navigation Drawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="drawer-links">
+        <li><a href="index.html" class="drawer-link">Home</a></li>
+        <li><a href="properties.html" class="drawer-link">Properties</a></li>
+        <li><a href="about.html" class="drawer-link">About</a></li>
+        <li><a href="services.html" class="drawer-link">Services</a></li>
+        <li><a href="communities.html" class="drawer-link">Communities</a></li>
+        <li><a href="contact.html" class="drawer-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <button class="btn-primary" id="drawerScheduleBtn" style="width: 100%; justify-content: center; margin-bottom: 1.5rem;">
+        Schedule a Visit
+      </button>
+      <div style="font-size: 0.85rem; color: var(--text-secondary); text-align: center;">
+        Concierge: +91 124 400 8899
+      </div>
+    </div>
+  </aside>
+
+  <div class="toast-notice" id="toastNotice">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B99A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toastMsg">Inquiry sent successfully. Our concierge will contact you shortly.</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

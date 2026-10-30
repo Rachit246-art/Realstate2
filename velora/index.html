@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VÉLORA — A Higher Standard of Living | Luxury Real Estate</title>
+  <meta name="description" content="Discover exceptional homes, prime locations, and a curated lifestyle designed around you by VÉLORA Real Estate.">
+  <link rel="stylesheet" href="style.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION
+       =================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container-wide nav-container">
+      <!-- VÉLORA Logo -->
+      <a href="#hero" class="brand-logo" aria-label="VÉLORA Real Estate Homepage">
+        <span class="logo-title">VÉLORA</span>
+        <span class="logo-subtitle">REAL ESTATE</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="communities.html">Communities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button class="btn-schedule" id="openScheduleModal" aria-label="Schedule a Visit">
+          Schedule a Visit
+        </button>
+        <button class="btn-menu-icon" id="openMobileDrawer" aria-label="Open Navigation Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="8" x2="20" y2="8"></line>
+            <line x1="4" y1="16" x2="20" y2="16"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       SECTION 1: PREMIUM HERO SECTION (3-SLIDE AUTO SLIDER)
+       =================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-slider" id="heroSlider">
+      <!-- Slide 1 -->
+      <div class="hero-slide active" data-slide="0">
+        <div class="hero-bg-wrapper">
+          <img src="assets/hero-slide-1.jpg" alt="VÉLORA Luxury Villa with Infinity Pool" class="hero-bg-img">
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="container-wide hero-container">
+          <div class="hero-content">
+            <div class="eyebrow eyebrow-light">PREMIUM LIVING SPACES</div>
+            <h1 class="hero-heading">
+              A Higher Standard<br>
+              <span class="italic-accent">of Living</span>
+            </h1>
+            <p class="hero-description">
+              Discover exceptional homes, prime locations and a lifestyle designed around you.
+            </p>
+            <div class="hero-buttons">
+              <a href="properties.html" class="btn-primary">
+                Explore Properties
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <button class="btn-story" id="openStoryModal" aria-label="Watch Our Story">
+                <span class="play-icon-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </span>
+                Watch Our Story
+              </button>
+            </div>
+          </div>
+          <div class="hero-vertical-text">
+            <span class="vertical-label">SPACES PEOPLE LOVE</span>
+            <div class="vertical-line"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide" data-slide="1">
+        <div class="hero-bg-wrapper">
+          <img src="assets/hero-slide-2.jpg" alt="VÉLORA Contemporary Architectural Residence" class="hero-bg-img">
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="container-wide hero-container">
+          <div class="hero-content">
+            <div class="eyebrow eyebrow-light">ARCHITECTURAL DISTINCTION</div>
+            <h1 class="hero-heading">
+              Sculpted in Light<br>
+              <span class="italic-accent">& Noble Form</span>
+            </h1>
+            <p class="hero-description">
+              Panoramic horizon vistas, private cantilevered infinity pools, and pure geometric symmetry.
+            </p>
+            <div class="hero-buttons">
+              <a href="properties.html" class="btn-primary">
+                View Residences
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <button class="btn-story" id="openStoryModalSlide2" aria-label="Watch Our Story">
+                <span class="play-icon-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </span>
+                Watch Our Story
+              </button>
+            </div>
+          </div>
+          <div class="hero-vertical-text">
+            <span class="vertical-label">TIMELESS DESIGN</span>
+            <div class="vertical-line"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide" data-slide="2">
+        <div class="hero-bg-wrapper">
+          <img src="assets/hero-slide-3.jpg" alt="VÉLORA Lakeside Botanical Sanctuary" class="hero-bg-img">
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="container-wide hero-container">
+          <div class="hero-content">
+            <div class="eyebrow eyebrow-light">PRIVATE SANCTUARIES</div>
+            <h1 class="hero-heading">
+              Where Architecture<br>
+              <span class="italic-accent">Meets Nature</span>
+            </h1>
+            <p class="hero-description">
+              Low-density masterplanned communities surrounded by tranquil botanical corridors and biophilic parks.
+            </p>
+            <div class="hero-buttons">
+              <a href="communities.html" class="btn-primary">
+                Discover Communities
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <button class="btn-schedule" id="openScheduleModalHero" style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.4); padding: 0.95rem 1.8rem; font-size: 0.88rem;">
+                Schedule a Visit
+              </button>
+            </div>
+          </div>
+          <div class="hero-vertical-text">
+            <span class="vertical-label">HARMONIC LIVING</span>
+            <div class="vertical-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Slider Indicators (01, 02, 03) -->
+    <div class="hero-slider-nav">
+      <div class="hero-dots">
+        <button class="hero-dot active" data-goto="0" aria-label="Go to Slide 1">
+          <span class="dot-num">01</span>
+          <span class="dot-line"><span class="dot-progress running"></span></span>
+        </button>
+        <button class="hero-dot" data-goto="1" aria-label="Go to Slide 2">
+          <span class="dot-num">02</span>
+          <span class="dot-line"><span class="dot-progress"></span></span>
+        </button>
+        <button class="hero-dot" data-goto="2" aria-label="Go to Slide 3">
+          <span class="dot-num">03</span>
+          <span class="dot-line"><span class="dot-progress"></span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Asymmetric Curved White Shape along Lower-Right Edge of Hero -->
+    <div class="hero-curve-transition" aria-hidden="true">
+      <svg viewBox="0 0 600 120" preserveAspectRatio="none">
+        <path d="M0,120 Q320,120 480,40 Q540,10 600,0 L600,120 Z" fill="#F8F6F0"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECTION 2: FLOATING STATISTICS PANEL
+       =================================================================== -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-card reveal">
+        <!-- 4 Statistics Grid with Thin Vertical Separators -->
+        <div class="stats-grid">
+          <div class="stat-item" aria-label="500+ Premium Properties">
+            <div class="stat-val-wrap">
+              <span class="stat-val" data-target="500">500</span><span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Premium Properties</span>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-item" aria-label="50+ Prime Locations">
+            <div class="stat-val-wrap">
+              <span class="stat-val" data-target="50">50</span><span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Prime Locations</span>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-item" aria-label="10K+ Happy Homeowners">
+            <div class="stat-val-wrap">
+              <span class="stat-val" data-target="10">10</span><span class="stat-suffix">K+</span>
+            </div>
+            <span class="stat-label">Happy Homeowners</span>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-item" aria-label="25+ Years of Trust">
+            <div class="stat-val-wrap">
+              <span class="stat-val" data-target="25">25</span><span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Years of Trust</span>
+          </div>
+        </div>
+
+        <!-- Special Circular Overlapping Image Card on Far Right -->
+        <div class="stats-badge-card">
+          <div class="badge-thumb-wrap">
+            <img src="assets/about-badge.jpg" alt="Crafting Communities for a Better Tomorrow" class="badge-thumb">
+          </div>
+          <div class="badge-text">
+            “Crafting Communities for a Better Tomorrow”
+          </div>
+          <a href="#about" class="badge-arrow-btn" aria-label="Learn about our communities">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7M7 7h10v10"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECTION 3: ABOUT US — EDITORIAL COLLAGE
+       =================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-editorial-grid">
+        <!-- LEFT: About Narrative -->
+        <div class="about-col-left reveal">
+          <div class="eyebrow">ABOUT US</div>
+          <h2 class="section-heading">Building More Than Homes</h2>
+          <p class="section-desc">
+            We craft thoughtfully designed living spaces, celebrated modern architecture, and environmentally conscious sustainable communities that enrich generations. Every VÉLORA residence embodies precision engineering, timeless luxury, and an enduring commitment to elevate human living.
+          </p>
+          <a href="#story" class="btn-outlined" id="openStoryModalBtn">
+            Our Story
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- CENTER: Architectural Image Collage -->
+        <div class="about-collage reveal delay-1">
+          <!-- 1. Large horizontal interior photograph -->
+          <div class="collage-item collage-horizontal">
+            <img src="assets/about-1.jpg" alt="Luxury Architectural Interior">
+          </div>
+          <!-- 2. Tall vertical exterior photograph -->
+          <div class="collage-item collage-vertical">
+            <img src="assets/about-2.jpg" alt="Modern Minimalist Villa Facade">
+          </div>
+          <!-- 3. Smaller supporting photograph -->
+          <div class="collage-item collage-small">
+            <img src="assets/about-3.jpg" alt="Architectural Detail and Lounge">
+          </div>
+        </div>
+
+        <!-- RIGHT: Handwritten Script & Supporting Visual -->
+        <div class="about-col-right reveal delay-2">
+          <div class="script-text">
+            “Spaces for a Brighter Tomorrow”
+          </div>
+          <div class="about-right-image-wrap">
+            <img src="assets/about-badge.jpg" alt="Architectural Green Sanctuary">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECTION 4: FEATURED PROPERTIES
+       =================================================================== -->
+  <section class="properties-section" id="properties">
+    <div class="container-wide">
+      <div class="properties-layout">
+        <!-- LEFT: Editorial Showcase Header -->
+        <div class="properties-sidebar reveal">
+          <div class="eyebrow">FEATURED PROPERTIES</div>
+          <h2 class="section-heading">Handpicked for a Refined Lifestyle</h2>
+          <p class="section-desc">
+            A curated portfolio of architectural masterpieces set in premier micro-markets, created for the discerning few.
+          </p>
+          <!-- Two Circular Previous/Next Arrow Controls -->
+          <div class="properties-controls">
+            <button class="btn-nav-arrow" id="propPrev" aria-label="Previous Property">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+            </button>
+            <button class="btn-nav-arrow" id="propNext" aria-label="Next Property">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- RIGHT: Three Horizontally Arranged Premium Property Cards -->
+        <div class="properties-slider-container reveal delay-1">
+          <div class="properties-track" id="propTrack">
+            <!-- Property 1: The Skyline Residences (Gurgaon) with FEATURED label -->
+            <article class="property-card" data-index="0">
+              <div class="property-img-wrap">
+                <span class="badge-featured">FEATURED</span>
+                <img src="assets/property-1.jpg" alt="The Skyline Residences in Gurgaon">
+              </div>
+              <div class="property-details">
+                <h3 class="property-title">The Skyline Residences</h3>
+                <div class="property-meta-row">
+                  <div class="property-location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Gurgaon
+                  </div>
+                  <div class="property-price">₹4.5 Cr Onwards</div>
+                </div>
+              </div>
+              <a href="property-detail.html" class="property-card-action" aria-label="View The Skyline Residences Details">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </a>
+            </article>
+
+            <!-- Property 2: Greenwood Estates (Noida) -->
+            <article class="property-card" data-index="1">
+              <div class="property-img-wrap">
+                <img src="assets/property-2.jpg" alt="Greenwood Estates in Noida">
+              </div>
+              <div class="property-details">
+                <h3 class="property-title">Greenwood Estates</h3>
+                <div class="property-meta-row">
+                  <div class="property-location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Noida
+                  </div>
+                  <div class="property-price">₹3.2 Cr Onwards</div>
+                </div>
+              </div>
+              <a href="property-detail.html" class="property-card-action" aria-label="View The Skyline Residences Details">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </a>
+            </article>
+
+            <!-- Property 3: Lakeside Villas (Bangalore) -->
+            <article class="property-card" data-index="2">
+              <div class="property-img-wrap">
+                <img src="assets/property-3.jpg" alt="Lakeside Villas in Bangalore">
+              </div>
+              <div class="property-details">
+                <h3 class="property-title">Lakeside Villas</h3>
+                <div class="property-meta-row">
+                  <div class="property-location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Bangalore
+                  </div>
+                  <div class="property-price">₹5.8 Cr Onwards</div>
+                </div>
+              </div>
+              <a href="property-detail.html" class="property-card-action" aria-label="View The Skyline Residences Details">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECTION 5: THE VÉLORA EXPERIENCE
+       =================================================================== -->
+  <section class="experience-section" id="experience">
+    <!-- Subtle Decorative Circular Ring Details -->
+    <div class="experience-bg-rings" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="experience-grid">
+        <!-- LEFT: Immersive Photograph with Organic Curved Edge -->
+        <div class="experience-image-container reveal">
+          <img src="assets/experience.jpg" alt="Luxury apartment interior with panoramic city view">
+          <!-- Organic Curved Edge Overlay Separator -->
+          <div class="experience-curve-overlay" aria-hidden="true">
+            <svg viewBox="0 0 60 620" preserveAspectRatio="none">
+              <path d="M60,0 Q10,310 60,620 L60,620 Z" fill="#F8F6F0"></path>
+            </svg>
+          </div>
+          <!-- Floating Experience Badge -->
+          <div class="experience-tag">
+            <div class="experience-tag-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="experience-tag-text">Editorial Excellence</div>
+              <div class="experience-tag-sub">Global Property Award 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Editorial Content & 4 Elegant Features -->
+        <div class="experience-content reveal delay-1">
+          <div class="eyebrow">THE VÉLORA EXPERIENCE</div>
+          <h2 class="section-heading">Where Architecture Meets a Better Life</h2>
+          <p class="section-desc">
+            From timeless design to modern amenities, every detail is crafted to give you a lifestyle that feels extraordinary.
+          </p>
+
+          <!-- 4 Elegant Icon Features -->
+          <div class="experience-features-grid">
+            <!-- 1. Prime Locations -->
+            <div class="feature-box">
+              <div class="feature-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+              </div>
+              <div class="feature-info">
+                <h4 class="feature-title">Prime Locations</h4>
+                <p class="feature-desc">Coveted enclaves surrounded by elite avenues and seamless connectivity.</p>
+              </div>
+            </div>
+
+            <!-- 2. Modern Architecture -->
+            <div class="feature-box">
+              <div class="feature-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                  <line x1="9" y1="22" x2="9" y2="22.01"></line>
+                  <line x1="15" y1="22" x2="15" y2="22.01"></line>
+                  <line x1="9" y1="6" x2="9" y2="6.01"></line>
+                  <line x1="15" y1="6" x2="15" y2="6.01"></line>
+                  <line x1="9" y1="10" x2="9" y2="10.01"></line>
+                  <line x1="15" y1="10" x2="15" y2="10.01"></line>
+                  <line x1="9" y1="14" x2="9" y2="14.01"></line>
+                  <line x1="15" y1="14" x2="15" y2="14.01"></line>
+                </svg>
+              </div>
+              <div class="feature-info">
+                <h4 class="feature-title">Modern Architecture</h4>
+                <p class="feature-desc">Floor-to-ceiling panoramic glass, fluid open terraces, and sustainable materials.</p>
+              </div>
+            </div>
+
+            <!-- 3. World-Class Amenities -->
+            <div class="feature-box">
+              <div class="feature-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <div class="feature-info">
+                <h4 class="feature-title">World-Class Amenities</h4>
+                <p class="feature-desc">Private temperature-regulated infinity pools, wellness spas, and concierge service.</p>
+              </div>
+            </div>
+
+            <!-- 4. Secure Communities -->
+            <div class="feature-box">
+              <div class="feature-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="feature-info">
+                <h4 class="feature-title">Secure Communities</h4>
+                <p class="feature-desc">Multi-tier biometric checkpoints, 24/7 dedicated surveillance, and private sanctuaries.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dark Pill-Shaped Button -->
+          <button class="btn-pill-dark" id="btnExperienceModal">
+            Discover the Experience
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       HOMEPAGE PREMIUM SECTION: ARCHITECTURAL MATERIALITY & NOBLE CRAFT
+       =================================================================== -->
+  <section class="materiality-section" id="materiality">
+    <div class="container">
+      <div class="materiality-grid">
+        <!-- LEFT: Material Swatches & Tactile Narratives -->
+        <div class="reveal">
+          <div class="eyebrow">NOBLE MATERIALITY & CRAFT</div>
+          <h2 class="section-heading">Tactile Luxury Built to Outlast Eras</h2>
+          <p class="section-desc">
+            From hand-quarried Italian Calacatta marble to acoustically insulated triple glazing, every VÉLORA residence is an ode to sensory refinement and enduring structural mastery.
+          </p>
+
+          <div class="material-swatches-list">
+            <!-- 01. Italian Calacatta & Travertine -->
+            <div class="material-swatch-item active" data-material="01">
+              <div class="material-swatch-header">
+                <span class="material-swatch-title">Italian Calacatta Oro & Travertine</span>
+                <span class="material-swatch-num">01</span>
+              </div>
+              <p class="material-swatch-desc">
+                Hand-selected from historical Tuscan quarries with continuous bookmatched veins for primary bathrooms and kitchen centerpieces.
+              </p>
+            </div>
+
+            <!-- 02. Aged Architectural Bronze -->
+            <div class="material-swatch-item" data-material="02">
+              <div class="material-swatch-header">
+                <span class="material-swatch-title">Aged Architectural Bronze</span>
+                <span class="material-swatch-num">02</span>
+              </div>
+              <p class="material-swatch-desc">
+                Custom hand-rubbed patinas on structural framing, window mullions, and bespoke entry hardware that enrich with ambient age.
+              </p>
+            </div>
+
+            <!-- 03. Mature Burmese Teak -->
+            <div class="material-swatch-item" data-material="03">
+              <div class="material-swatch-header">
+                <span class="material-swatch-title">Mature Burmese Teak</span>
+                <span class="material-swatch-num">03</span>
+              </div>
+              <p class="material-swatch-desc">
+                Kiln-dried, quarter-sawn natural timber engineered for private sun decks, cantilevered ceilings, and walk-in dressing suites.
+              </p>
+            </div>
+
+            <!-- 04. Acoustic Triple Glazing -->
+            <div class="material-swatch-item" data-material="04">
+              <div class="material-swatch-header">
+                <span class="material-swatch-title">Acoustic Triple Glazing</span>
+                <span class="material-swatch-num">04</span>
+              </div>
+              <p class="material-swatch-desc">
+                12.5 ft floor-to-ceiling Low-E glass assemblies that isolate exterior decibels, bathe interiors in daylight, and reject solar thermal heat.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Interactive Large Visual Display -->
+        <div class="reveal delay-1">
+          <div class="material-visual-display">
+            <img src="assets/interior-kitchen.jpg" alt="Italian Marble Kitchen Architecture" id="materialImg">
+            <div class="material-provenance-tag">
+              <h5 id="materialProvTitle">Carrara Calacatta Oro</h5>
+              <p id="materialProvSub">Tuscany, Italy • Bookmatched Slabs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECTION 6: OUR COMMUNITIES
+       =================================================================== -->
+  <section class="communities-section" id="communities">
+    <div class="container-wide">
+      <div class="communities-split">
+        <!-- LEFT: Editorial Info -->
+        <div class="communities-info reveal">
+          <div class="eyebrow">OUR COMMUNITIES</div>
+          <h2 class="section-heading">More Than Just Homes</h2>
+          <p class="section-desc">
+            Expansive landscaped gardens, dedicated recreational avenues, and thoughtfully connected neighborhood living engineered for holistic peace of mind.
+          </p>
+          <!-- Champagne Brown Rounded Button -->
+          <button class="btn-champagne" id="btnCommunitiesModal">
+            Explore Communities
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- RIGHT: Four Architectural Image Cards Carousel -->
+        <div class="communities-carousel reveal delay-1">
+          <div class="communities-track" id="commTrack">
+            <!-- 1. Lush Green Surroundings -->
+            <div class="community-card" data-step="1">
+              <div class="community-img-wrap">
+                <img src="assets/community-1.jpg" alt="Lush Green Surroundings">
+              </div>
+              <h4 class="community-card-title">
+                Lush Green Surroundings
+                <span>→</span>
+              </h4>
+            </div>
+
+            <!-- 2. Modern Clubhouse -->
+            <div class="community-card" data-step="2">
+              <div class="community-img-wrap">
+                <img src="assets/community-2.jpg" alt="Modern Clubhouse">
+              </div>
+              <h4 class="community-card-title">
+                Modern Clubhouse
+                <span>→</span>
+              </h4>
+            </div>
+
+            <!-- 3. Fitness & Wellness -->
+            <div class="community-card" data-step="3">
+              <div class="community-img-wrap">
+                <img src="assets/community-3.jpg" alt="Fitness & Wellness">
+              </div>
+              <h4 class="community-card-title">
+                Fitness & Wellness
+                <span>→</span>
+              </h4>
+            </div>
+
+            <!-- 4. Family-Friendly Spaces -->
+            <div class="community-card" data-step="4">
+              <div class="community-img-wrap">
+                <img src="assets/community-4.jpg" alt="Family-Friendly Spaces">
+              </div>
+              <h4 class="community-card-title">
+                Family-Friendly Spaces
+                <span>→</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom: Horizontal Slider Progress Line, Slide Numbers & Controls -->
+      <div class="communities-controls-bar reveal delay-2">
+        <!-- Horizontal Slider Progress Line -->
+        <div class="slider-progress-wrap">
+          <div class="slider-progress-bar" id="commProgressBar"></div>
+        </div>
+
+        <!-- Slide Numbers -->
+        <div class="slider-slide-numbers">
+          <span id="commCurrentNum">01</span> / <span id="commTotalNum">04</span>
+        </div>
+
+        <!-- Circular Navigation Controls -->
+        <div class="slider-arrows">
+          <button class="btn-nav-arrow" id="commPrev" aria-label="Previous Community">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+          </button>
+          <button class="btn-nav-arrow" id="commNext" aria-label="Next Community">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       NEW PREMIUM SECTION: CURATED PRIME MICRO-MARKETS
+       =================================================================== -->
+  <section class="destinations-section" id="destinations">
+    <div class="container-wide">
+      <div style="max-width: 650px;" class="reveal">
+        <div class="eyebrow">CURATED MICRO-MARKETS</div>
+        <h2 class="section-heading">The Most Coveted Addresses in India</h2>
+        <p class="section-desc">
+          Strategically located within premier corridors offering immediate proximity to private aviation helipads, championship golf links, and diplomatic enclaves.
+        </p>
+      </div>
+
+      <div class="destinations-grid reveal delay-1">
+        <!-- 1. Gurgaon -->
+        <a href="properties.html" class="destination-card">
+          <img src="assets/property-1.jpg" alt="Gurgaon Golf Course Road Skyline" class="destination-card-bg">
+          <div class="destination-card-overlay"></div>
+          <div class="destination-card-content">
+            <span class="destination-city-tag">NCR FINANCIAL CORRIDOR</span>
+            <h3 class="destination-title">Golf Course Road, Gurgaon</h3>
+            <div class="destination-stat">
+              <span>4 Signature Developments</span>
+              <span>Explore →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 2. Mumbai -->
+        <a href="properties.html" class="destination-card">
+          <img src="assets/property-4.jpg" alt="Worli Sea Face Coastal Architecture" class="destination-card-bg">
+          <div class="destination-card-overlay"></div>
+          <div class="destination-card-content">
+            <span class="destination-city-tag">ARABIAN SEA FRONTAGE</span>
+            <h3 class="destination-title">Worli Sea Face, Mumbai</h3>
+            <div class="destination-stat">
+              <span>Trophy Sky Mansions</span>
+              <span>Explore →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 3. South Delhi -->
+        <a href="properties.html" class="destination-card">
+          <img src="assets/property-5.jpg" alt="South Delhi Chattarpur Greenery" class="destination-card-bg">
+          <div class="destination-card-overlay"></div>
+          <div class="destination-card-content">
+            <span class="destination-city-tag">HERITAGE COMPOUND ACREAGE</span>
+            <h3 class="destination-title">Chattarpur, South Delhi</h3>
+            <div class="destination-stat">
+              <span>Private Gated Compounds</span>
+              <span>Explore →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 4. Bangalore -->
+        <a href="properties.html" class="destination-card">
+          <img src="assets/property-3.jpg" alt="Hebbal Bangalore Lakefront Villas" class="destination-card-bg">
+          <div class="destination-card-overlay"></div>
+          <div class="destination-card-content">
+            <span class="destination-city-tag">LAKEFRONT BIOPHILIC SANCTUARY</span>
+            <h3 class="destination-title">Hebbal, Bangalore</h3>
+            <div class="destination-stat">
+              <span>Waterfront Villas</span>
+              <span>Explore →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       NEW PREMIUM SECTION: PRIVATE WEALTH & VIP CONCIERGE SALON
+       =================================================================== -->
+  <section class="vip-salon-section" id="vip-advisory">
+    <div class="container-wide">
+      <div class="vip-salon-banner reveal">
+        <!-- Left: Editorial Content & Features -->
+        <div class="vip-salon-content">
+          <div class="eyebrow eyebrow-light">PRIVATE CLIENT GROUP</div>
+          <h2 style="font-family: var(--font-heading); font-size: clamp(2.3rem, 3.8vw, 3.5rem); color: #EDE7DC; line-height: 1.15; margin-bottom: 1.25rem;">
+            Confidential Off-Market Trophy Acquisitions
+          </h2>
+          <p style="color: rgba(255, 255, 255, 0.75); line-height: 1.7; font-size: 1.05rem;">
+            Over 40% of India's most extraordinary residential estates are acquired discreetly without public listing. Our private client liaisons provide confidential access, bespoke escrow structuring, and direct architectural commissioning.
+          </p>
+
+          <div class="vip-perks-row">
+            <div class="vip-perk-item">
+              <div class="vip-perk-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div>
+                <h5>100% Non-Disclosure</h5>
+                <p>Strict confidentiality agreements and anonymous legal acquisition protocols.</p>
+              </div>
+            </div>
+
+            <div class="vip-perk-item">
+              <div class="vip-perk-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              </div>
+              <div>
+                <h5>Bespoke Architecture</h5>
+                <p>Collaborate directly with senior architectural partners to customize floor plates.</p>
+              </div>
+            </div>
+
+            <div class="vip-perk-item">
+              <div class="vip-perk-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div>
+                <h5>Dedicated Family Liaison</h5>
+                <p>Single point of contact for multi-property portfolio management across India.</p>
+              </div>
+            </div>
+
+            <div class="vip-perk-item">
+              <div class="vip-perk-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <h5>Private Aviation Fleet</h5>
+                <p>Complimentary helicopter and chauffeur transfers to remote private viewings.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button class="btn-primary" id="openScheduleModal" style="background: var(--accent);">
+              Request Confidential Briefing
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Architectural Salon Visual & Floating Card -->
+        <div class="vip-salon-visual">
+          <img src="assets/service-advisory.jpg" alt="VÉLORA Private Wealth Acquisition Lounge">
+          <div class="vip-concierge-card">
+            <span class="eyebrow" style="margin-bottom: 0.5rem;">DIRECT CONCIERGE DESK</span>
+            <h4>Private Client Liaison</h4>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+              Direct line to Managing Director Kabir Vardhan's advisory office.
+            </p>
+            <div style="font-family: var(--font-heading); font-size: 1.3rem; font-weight: 600; color: var(--dark-espresso); margin-bottom: 0.5rem;">
+              +91 124 400 8899
+            </div>
+            <div style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent);">
+              Available 24/7 for Patrons
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       NEW PREMIUM SECTION: THE RESIDENTS JOURNAL / EDITORIAL ESSAYS
+       =================================================================== -->
+  <section class="journal-section" id="journal">
+    <div class="container-wide">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;" class="reveal">
+        <div style="max-width: 600px;">
+          <div class="eyebrow">THE RESIDENTS JOURNAL</div>
+          <h2 class="section-heading">Perspectives on Modern Architectural Living</h2>
+          <p class="section-desc">
+            Dispatches on sensory materials, biophilic microclimates, and private art curation from our architectural monograph series.
+          </p>
+        </div>
+        <a href="about.html" class="btn-outlined">
+          View All Monograph Issues
+        </a>
+      </div>
+
+      <div class="journal-grid reveal delay-1">
+        <!-- Feature Article (Large) -->
+        <article class="journal-card-featured">
+          <div class="journal-featured-img">
+            <img src="assets/experience.jpg" alt="High-Rise Penthouse with Panoramic City Horizon">
+          </div>
+          <div class="journal-featured-body">
+            <span class="journal-tag">ARCHITECTURAL PHILOSOPHY • ISSUE 08</span>
+            <h3 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-primary); line-height: 1.25; margin-bottom: 0.85rem;">
+              The Geometry of Silence: Engineering Acoustic Sanctuaries in High-Rise Architecture
+            </h3>
+            <p style="font-size: 0.98rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+              How layered low-frequency acoustic barriers, double-glazed decoupling joints, and sound-absorbing natural travertine slabs allow penthouses to exist in absolute stillness 500 feet above metropolitan bustle.
+            </p>
+            <div style="display: flex; align-items: center; justify-content: space-between; font-size: 0.82rem; color: var(--text-secondary); border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+              <span>By Senior Principal Stefan Richter</span>
+              <span style="color: var(--accent); font-weight: 600;">6 Min Read →</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Stacked Column (2 Compact Articles) -->
+        <div class="journal-stacked-col">
+          <!-- Article 2 -->
+          <article class="journal-card-compact">
+            <div class="journal-compact-img">
+              <img src="assets/about-1.jpg" alt="Biophilic Natural Daylight Living Salon">
+            </div>
+            <div class="journal-compact-body">
+              <span class="journal-tag">SUSTAINABLE INNOVATION</span>
+              <h4 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--text-primary); line-height: 1.3; margin-bottom: 0.5rem;">
+                Living Facades: Lowering Ambient Temperatures with Vertical Botanic Corridors
+              </h4>
+              <span style="font-size: 0.78rem; color: var(--accent); font-weight: 600;">4 Min Read →</span>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="journal-card-compact">
+            <div class="journal-compact-img">
+              <img src="assets/about-3.jpg" alt="Architectural Lounge with Curated Materials">
+            </div>
+            <div class="journal-compact-body">
+              <span class="journal-tag">LIFESTYLE & CRAFT</span>
+              <h4 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--text-primary); line-height: 1.3; margin-bottom: 0.5rem;">
+                The Private Sommelier Vault: Engineering Residential Wine Cellars for Generations
+              </h4>
+              <span style="font-size: 0.78rem; color: var(--accent); font-weight: 600;">5 Min Read →</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       NEW PREMIUM SECTION: PRESTIGE CITATIONS & RECOGNITION RIBBON
+       =================================================================== -->
+  <section class="prestige-ribbon-section" id="recognition">
+    <div class="container-wide">
+      <div class="prestige-ribbon-grid reveal">
+        <!-- Accolade 1 -->
+        <div class="prestige-item">
+          <span class="prestige-year">2025 NOMINEE</span>
+          <h4 class="prestige-award-title">World Architecture Festival</h4>
+          <span class="prestige-award-sub">Best Luxury Residential High-Rise</span>
+        </div>
+
+        <!-- Accolade 2 -->
+        <div class="prestige-item">
+          <span class="prestige-year">IGBC PLATINUM</span>
+          <h4 class="prestige-award-title">Net-Zero Carbon Leadership</h4>
+          <span class="prestige-award-sub">100% Sustainable Operations</span>
+        </div>
+
+        <!-- Accolade 3 -->
+        <div class="prestige-item">
+          <span class="prestige-year">ASIA-PACIFIC 2026</span>
+          <h4 class="prestige-award-title">International Property Awards</h4>
+          <span class="prestige-award-sub">Best Architectural Design Concept</span>
+        </div>
+
+        <!-- Accolade 4 -->
+        <div class="prestige-item">
+          <span class="prestige-year">EDITORIAL HONORS</span>
+          <h4 class="prestige-award-title">Architectural Digest Top 50</h4>
+          <span class="prestige-award-sub">Visionaries Shaping Global Living</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="footer" id="contact">
+    <div class="container-wide">
+      <!-- Top Brand Statement & Newsletter -->
+      <div class="footer-top">
+        <h2 class="footer-tagline-heading">
+          A Higher Standard of Living, Defined for Tomorrow.
+        </h2>
+        <div class="footer-newsletter">
+          <span class="newsletter-label">Private Portfolio Newsletter</span>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Enter your private email..." required>
+            <button type="submit" class="newsletter-submit" aria-label="Subscribe">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Columns -->
+      <div class="footer-columns-grid">
+        <!-- Brand Info -->
+        <div class="footer-col footer-col-brand">
+          <div class="brand-logo">
+            <span class="logo-title">VÉLORA</span>
+            <span class="logo-subtitle">REAL ESTATE</span>
+          </div>
+          <p>
+            Curating India's most extraordinary residential landscapes and private luxury architectural estates with uncompromising elegance.
+          </p>
+        </div>
+
+        <!-- Portfolio Links -->
+        <div class="footer-col">
+          <h4>Residences</h4>
+          <ul class="footer-links">
+            <li><a href="#properties">The Skyline Residences</a></li>
+            <li><a href="#properties">Greenwood Estates</a></li>
+            <li><a href="#properties">Lakeside Villas</a></li>
+            <li><a href="#properties">Signature Penthouses</a></li>
+            <li><a href="#properties">Private Enclaves</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer-col">
+          <h4>Architecture</h4>
+          <ul class="footer-links">
+            <li><a href="#about">Our Philosophy</a></li>
+            <li><a href="#experience">The Experience</a></li>
+            <li><a href="#communities">Sustainable Design</a></li>
+            <li><a href="#about">Heritage & Craft</a></li>
+            <li><a href="#contact">Private Concierge</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Locations -->
+        <div class="footer-col">
+          <h4>Private Offices</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+911244008899">+91 124 400 8899</a></li>
+            <li><a href="mailto:concierge@velorarealestate.com">concierge@velorarealestate.com</a></li>
+            <li><a href="#contact">Golf Course Road, Gurgaon</a></li>
+            <li><a href="#contact">Lavelle Road, Bangalore</a></li>
+            <li><a href="#contact">Worli Sea Face, Mumbai</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>© 2026 VÉLORA Real Estate Group. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Protocol</a>
+          <a href="#">Terms of Exclusivity</a>
+          <a href="#">RERA Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       MODAL: SCHEDULE A VISIT
+       =================================================================== -->
+  <div class="modal-overlay" id="scheduleModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="closeScheduleModal" aria-label="Close Schedule Dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="eyebrow">PRIVATE APPOINTMENT</div>
+      <h3 class="section-heading" style="font-size: 2.2rem; margin-bottom: 0.5rem;">Schedule a Visit</h3>
+      <p class="section-desc" style="margin-bottom: 1.5rem;">
+        Experience the architectural brilliance of VÉLORA with a bespoke private walkthrough accompanied by our senior lifestyle advisor.
+      </p>
+
+      <form id="scheduleForm">
+        <div class="form-group">
+          <label for="schedName">Full Name</label>
+          <input type="text" id="schedName" class="form-control" placeholder="e.g. Alistair Vance" required>
+        </div>
+        <div class="form-group">
+          <label for="schedPhone">Phone Number</label>
+          <input type="tel" id="schedPhone" class="form-control" placeholder="+91 98765 43210" required>
+        </div>
+        <div class="form-group">
+          <label for="schedProp">Preferred Property</label>
+          <select id="schedProp" class="form-control">
+            <option value="skyline">The Skyline Residences (Gurgaon)</option>
+            <option value="greenwood">Greenwood Estates (Noida)</option>
+            <option value="lakeside">Lakeside Villas (Bangalore)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="schedDate">Preferred Date</label>
+          <input type="date" id="schedDate" class="form-control" required>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
+          Confirm Private Viewing
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       MODAL: WATCH OUR STORY
+       =================================================================== -->
+  <div class="modal-overlay" id="storyModal">
+    <div class="modal-box" style="max-width: 800px; padding: 2rem;">
+      <button class="modal-close-btn" id="closeStoryModal" aria-label="Close Story Video">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="eyebrow">CINEMATIC ESSAY</div>
+      <h3 class="section-heading" style="font-size: 2rem; margin-bottom: 1.25rem;">The VÉLORA Narrative</h3>
+      <div style="position: relative; width: 100%; aspect-ratio: 16/9; border-radius: var(--radius-lg); overflow: hidden; background: #000;">
+        <img src="assets/hero.jpg" alt="VÉLORA Architecture" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.85;">
+        <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,0.4); color: #fff; text-align: center; padding: 2rem;">
+          <div style="width: 70px; height: 70px; border-radius: 50%; background: #B99A75; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; box-shadow: 0 0 30px rgba(185,154,117,0.6);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#FFFFFF"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </div>
+          <h4 style="font-family: var(--font-heading); font-size: 1.6rem; margin-bottom: 0.5rem;">“A Higher Standard of Living”</h4>
+          <p style="font-size: 0.9rem; max-width: 440px; color: rgba(255,255,255,0.85);">An architectural expedition into light, biophilic landscapes, and timeless living.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       MOBILE NAVIGATION DRAWER
+       =================================================================== -->
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div>
+      <div style="display: flex; align-items: center; justify-content: space-between;">
+        <div class="brand-logo">
+          <span class="logo-title" style="color: var(--text-primary);">VÉLORA</span>
+          <span class="logo-subtitle" style="color: var(--accent);">REAL ESTATE</span>
+        </div>
+        <button class="modal-close-btn" id="closeMobileDrawer" aria-label="Close Navigation Drawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="drawer-links">
+        <li><a href="index.html" class="drawer-link">Home</a></li>
+        <li><a href="properties.html" class="drawer-link">Properties</a></li>
+        <li><a href="about.html" class="drawer-link">About</a></li>
+        <li><a href="services.html" class="drawer-link">Services</a></li>
+        <li><a href="communities.html" class="drawer-link">Communities</a></li>
+        <li><a href="contact.html" class="drawer-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <button class="btn-primary" id="drawerScheduleBtn" style="width: 100%; justify-content: center; margin-bottom: 1.5rem;">
+        Schedule a Visit
+      </button>
+      <div style="font-size: 0.85rem; color: var(--text-secondary); text-align: center;">
+        Concierge: +91 124 400 8899
+      </div>
+    </div>
+  </aside>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toastNotice">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B99A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toastMsg">Inquiry sent successfully. Our concierge will contact you shortly.</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
